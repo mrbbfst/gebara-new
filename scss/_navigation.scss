@@ -1,0 +1,55 @@
+.navigation {
+    height: 84px;
+    width: 100%;
+    background-color: #0E2238;
+    //transform: skewX(-25deg);background-color: #fff;
+    background: url(../images/logo.png) left 20px center/230px 60px no-repeat, #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    
+
+    &__links {
+        position: relative;
+        height: 100%;
+        display: flex;
+        list-style: none;
+        background: #0E2238;
+        width: 60%;
+        transform: skewX(-20deg);
+        right: -16px;
+    }
+
+    &__item {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: 10px;
+        transform: skewX(20deg);
+
+    }
+
+    &__button {
+        position: relative;
+        padding: 33px 46px;
+        background: #EB202E;
+        color: #fff;
+        font-style: normal;
+        font-weight: bold;
+        //font-size: 14px;
+        line-height: 17px;
+        width: 20%;
+        width: calc(292vw / 15);
+        max-width: 306px;
+        transform: skewX(-20deg);
+        height: 100%;
+        right: -15px;
+
+        &-text {
+            display: inline-block;
+            transform: skewX(20deg);
+        }
+    }
+}
