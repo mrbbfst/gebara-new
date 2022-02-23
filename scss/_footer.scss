@@ -1,5 +1,91 @@
 .footer {
     min-height: 384px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    padding: 64px calc(100vw * 0.12);
+    background: #fff;
+    
+
+    &__column {
+        border-top: 1px solid #000;
+        padding-top: 24px;
+    }
+
+    &__contacts-item {
+        list-style: none;
+        position: relative;
+      
+        & + & {
+            margin-top: 28px;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            left: -25px;
+            bottom: -5px;
+            max-width: 17px;
+            min-width: 17px;
+            height: 17px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        &--map-pointer::before {
+            background-image: url(../images/icons/map-pin.png);
+        }
+        &--phone::before {
+            background-image: url(../images/icons/phone.png);
+        }
+        &--mail::before {
+            background-image: url(../images/icons/mail.png);
+        }
+    }
+
+    &__contact-social {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+
+        &:hover {
+            filter: invert(.6);
+        }
+    
+        & + & {
+            margin-left: 8px;
+        }
+
+        &--vk {
+            background-image: url(../images/icons/vk.png);
+        }
+        &--fb {
+            background-image: url(../images/icons/facebook.png);
+        }
+    }
+
+    &__link {
+        
+        & + & {
+            margin-top: 24px;
+        }
+        & > a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 16px;
+            color: #FC4B55;
+        }
+
+        &--accent > a {
+            color: #000;
+            opacity: .5;
+        }
+    }
+
 }

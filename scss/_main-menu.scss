@@ -13,6 +13,7 @@
     align-items: center;
 
     &__item {
+        position: relative;
         max-width: 231px;
         width: 20%;
         //height: 128px;
@@ -24,6 +25,7 @@
         background-position: center;
         background-repeat: no-repeat;
         transition: .5s;
+        overflow: hidden;
 
 
         &:nth-child(n+6) {
@@ -105,9 +107,36 @@
             background-color: #EB202E;
             color: #fff;
         }
+
+
+    }
+
+    &__material-temp-element {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        min-height: 12px;
+        min-width: 12px;
+        border-radius: 100%;
+        background: rgb(255, 255, 255);
+        animation: buttonWave 2s;
+
     }
 
     &__inner-text {
         margin-bottom: 5px;
     }
 }
+
+@keyframes buttonWave {
+    0% {
+      opacity: 0.2;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(50);
+              transform: scale(50);
+    }
+  }
