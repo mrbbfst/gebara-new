@@ -17,7 +17,7 @@
         z-index: 2;
     }
 
-    &__bg-correct-collor {
+    &__bg-correct-color {
         z-index: 1;
         position: absolute;
         top: 0;
@@ -26,5 +26,15 @@
         right: 0;
         background: #0073ff;
         mix-blend-mode: color;
+    }
+    &__bg-correct-color2 {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #001121;
+        opacity: .6;
     }
 }

@@ -700,7 +700,7 @@ a {
   z-index: 2;
 }
 
-.invitation__bg-correct-collor {
+.invitation__bg-correct-color {
   z-index: 1;
   position: absolute;
   top: 0;
@@ -709,5 +709,26 @@ a {
   right: 0;
   background: #0073ff;
   mix-blend-mode: color;
+}
+
+.invitation__bg-correct-color2 {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #001121;
+  opacity: .6;
+}
+
+.footer {
+  min-height: 384px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 /*# sourceMappingURL=style.css.map */
