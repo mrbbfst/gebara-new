@@ -1,0 +1,43 @@
+.certificate { 
+    min-height: 650px;
+    padding: 115px;
+    background: url('data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNklDQ7AwABkQEeGMYcngAAAABJRU5ErkJggg=='), url(../images/backgrounds/red-car.png) center/cover no-repeat;
+    position: relative;
+    
+    &__title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 49px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+        margin-left: 20%;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        height: 265px;
+    }
+
+    &__item {
+        //width: 198px;
+        height: 265px;
+        background: #fff;
+        flex-shrink: 2;
+        
+
+        & + & {
+            margin-left: 35px;
+        }
+    }
+
+    &__img {
+        margin: 5%;
+        
+        height: 90%;
+        width: 90%;
+    }
+
+}

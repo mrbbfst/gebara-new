@@ -1,0 +1,30 @@
+.invitation {
+    display: flex;
+    flex-direction: column;
+    min-height: 396px;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/backgrounds/mechanic-tools.png) center/cover no-repeat;
+    color: #fff;
+    position: relative;
+   
+    &__text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 34px;
+        margin-bottom: 63px;
+        z-index: 2;
+    }
+
+    &__bg-correct-collor {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #0073ff;
+        mix-blend-mode: color;
+    }
+}

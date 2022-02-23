@@ -1,0 +1,28 @@
+.short-info {
+    min-height: 250px;
+    background: url('data:image/png;Base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8fwMAAtwB2fnro5IAAAAASUVORK5CYII='),
+                url(../images/backgrounds/wheel.png) center/cover no-repeat;
+    color: #000;
+    
+    &__text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &--contacts {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &__inner {
+        text-align: left;
+        max-width: 65%;
+    }
+}

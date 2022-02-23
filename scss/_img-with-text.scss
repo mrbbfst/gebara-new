@@ -1,0 +1,23 @@
+.img-with-text {
+    position: relative;
+    width: 500px;
+    &__text {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 39px;
+        display: block;
+        padding:20px;
+        background: #fff;
+        transform: skewX(-20deg);
+        position: absolute;
+        z-index: 1;
+        left: 20%;
+        bottom:-70px;
+        width: 60%;
+    }
+
+    &__text-normalize {
+        display: block;
+        transform: skewX(20deg);
+    }
+}

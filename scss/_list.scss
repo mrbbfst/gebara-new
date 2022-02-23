@@ -1,0 +1,40 @@
+.list {
+    width: 35vw;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    &__items {
+        list-style: none;
+        position: relative;
+        & + & {
+            margin-top: 20px;
+        }
+       
+
+        &::before {
+            position: absolute;
+            content:'';
+            display: inline-block;
+    
+            min-width: 19px;
+            max-width: 19px;
+            min-height: 15px;
+            max-height: 15px;
+            background: #EB202E;
+            transform: skewX(-20deg);
+            left: -40px;
+            top: calc(50% - 5px);
+
+        }
+
+        &-inner {
+            display: block;
+        }
+    }
+
+    &--on-index-info{
+        margin-left: 30%;
+    }
+}

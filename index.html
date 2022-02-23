@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Document</title>
 </head>
 <body>
     <header class="header">
         <nav class="navigation">
-            <!--<div class="header__logo">
-
-            </div>-->
+            <a class="header__logo" href="#">
+                <img src="images/logo.png" alt="" class="header__logo-img">
+            </a>
             <ul class="navigation__links">
                 <li class="navigation__item"><a href="" class="navigation__link">О компании</a></li>
                 <li class="navigation__item navigation__item--popup"><a href="" class="navigation__link">Услуги</a></li>
@@ -28,16 +29,16 @@
         </nav>
         <div class="header__container">
             <div class="main-menu">
-                <div class="main-menu__item">Ремонт</div>
-                <div class="main-menu__item">Шиномонтаж</div>
-                <div class="main-menu__item">Кузовные работы</div>
-                <div class="main-menu__item">Запчасти</div>
-                <div class="main-menu__item">Замена стекол</div>
-                <div class="main-menu__item">Чип тюнинг</div>
-                <div class="main-menu__item">Диагностика</div>
-                <div class="main-menu__item">Замена масла</div>
-                <div class="main-menu__item">Подогреватели и кондиционеры</div>
-                <div class="main-menu__item">Установка сигнализаций</div>
+                <div class="main-menu__item main-menu__item--remont"><span class="main-menu__inner-text">Ремонт и ТО</span></div>
+                <div class="main-menu__item main-menu__item--wheel"><span class="main-menu__inner-text">Шиномонтаж</span></div>
+                <div class="main-menu__item main-menu__item--shape"><span class="main-menu__inner-text">Кузовные работы</span></div>
+                <div class="main-menu__item main-menu__item--gears"><span class="main-menu__inner-text">Запчасти</span></div>
+                <div class="main-menu__item main-menu__item--glass"><span class="main-menu__inner-text">Замена стекол</span></div>
+                <div class="main-menu__item main-menu__item--tuning"><span class="main-menu__inner-text">Чип тюнинг</span></div>
+                <div class="main-menu__item main-menu__item--diagnost"><span class="main-menu__inner-text">Диагностика</span></div>
+                <div class="main-menu__item main-menu__item--oil"><span class="main-menu__inner-text">Замена масла</span></div>
+                <div class="main-menu__item main-menu__item--webasto"><span class="main-menu__inner-text">Подогреватели и кондиционеры</span></div>
+                <div class="main-menu__item main-menu__item--alarm"><span class="main-menu__inner-text">Установка сигнализаций</span></div>
             </div>
         </div>
     </header>
@@ -50,10 +51,13 @@
                 Gebara Racing — автотехцентр, предоставляющий весь перечень услуг по ремонту и техническому обслуживанию автомобилей различных марок. Мы производим комплексное обслуживание автомобилей от «А до Я».
             </p>
             <p class="info__title info__title--third">
-                Работаем с 1998 года в Красноярске, помогаем справляться с сибирскими морозами и оперативно ремонтируем все неисправности. С нами автомобиль эффективно прослужит вам долгие годы. <br>Исторически Gebara Racing специализируется на ремонте немецких автомобилей группы VAG (Volkswagen, Audi, Skoda, Seat), но также осуществляем квалифицированный ремонт автомобилей Mercedes-Benz, Lexus, Toyota и других..
+                Работаем с 1998 года в Красноярске, помогаем справляться с сибирскими морозами и оперативно ремонтируем все неисправности. С нами автомобиль эффективно прослужит вам долгие годы.
             </p>
-            <img src="" alt="" class="image-on-text">
-            <img src="" alt="" class="image-on-text">
+            <p class="info__title info__title--third">
+                Исторически Gebara Racing специализируется на ремонте немецких автомобилей группы VAG (Volkswagen, Audi, Skoda, Seat), но также осуществляем квалифицированный ремонт автомобилей Mercedes-Benz, Lexus, Toyota и других..
+            </p>
+            <img class="image-on-text image-on-text--red-car" src="images/content/red-car.png" alt="" >
+            <img class="image-on-text image-on-text--gray-car" src="images/content/gray-car.png" alt="" >
         </div>
     </section>
     <section class="certificate">
@@ -61,46 +65,64 @@
             Наши сертификаты
         </div>
         <div class="certificate__wrapper">
-            <div class="certificate__item"></div>
-            <div class="certificate__item"></div>
-            <div class="certificate__item"></div>
-            <div class="certificate__item"></div>
-            <div class="certificate__item"></div>
+            <div class="certificate__item"><img class="certificate__img" src="images/certificate/image 6.png" alt="" ></div>
+            <div class="certificate__item"><img class="certificate__img" src="images/certificate/image 6-1.png" alt="" ></div>
+            <div class="certificate__item"><img class="certificate__img" src="images/certificate/image 6-2.png" alt="" ></div>
+            <div class="certificate__item"><img class="certificate__img" src="images/certificate/image 6-3.png" alt="" ></div>
+            <div class="certificate__item"><img class="certificate__img" src="images/certificate/image 6-4.png" alt="" ></div>
         </div>
-        <div class="btn-main btn-main--sect-certifiate"></div>
+        <div class="btn-main btn-main--sect-certifiate"><span class="btn-main__text">Показать еще</span></div>
     </section>
     <section class="short-info short-info--contacts">
         <div class="container">
-            <p class="short-info__text">
-                Сайт техцентра содержит полную информацию о предоставляемых видах услуг. 
-Телефон техцентра — (+7 391) 265-65-65
-Мы находимся в городе Красноярск. 
-Адрес техцентра — 660055, г. Красноярск, пр. Металлургов, 1е 
-            </p>
+            <div class="short-info__wrapper">
+                <div class="short-info__inner">
+                    <p class="short-info__text">
+                        Сайт техцентра содержит полную информацию о предоставляемых видах услуг. 
+                    </p>
+                    <p class="short-info__text">
+                        Телефон техцентра — (+7 391) 265-65-65
+                    </p>
+                    <p class="short-info__text">
+                        Мы находимся в городе Красноярск.
+                    </p>
+                    <p class="short-info__text">
+                        Адрес техцентра — 660055, г. Красноярск, пр. Металлургов, 1е 
+                    </p>
+                </div>
+            </div> 
+            
         </div>
     </section>
-    <section class="info">
-        <ul class="list">
-            <li class="list__items">Текущее техническое обслуживание автомобиля</li>
-            <li class="list__items">Диагностика и ремонт автомобильного транспорта (слесарный ремонт, ремонт двигателей, ремонт электрики и электроники автомобиля)</li>
-            <li class="list__items">Установка оборудования Webasto (автономные отопители, люки, кондиционеры)</li>
-            <li class="list__items">Вклейка и замена стекол автомобиля</li>
-            <li class="list__items">Кузовной ремонт автомобилей, полировка</li>
-            <li class="list__items">Ремонт и обслуживание двигателей</li>
-        </ul>
-        <div class="img-wirh-text">
-            <img src="" alt="" class="image-on-text">
+    <section class="info info--services">
+        
+            <ul class="list list--on-index-info">
+                <li class="list__items">Текущее техническое обслуживание автомобиля</li>
+                <li class="list__items"><span class="list__items-inner">
+                    Диагностика и ремонт автомобильного транспорта (слесарный ремонт, ремонт двигателей, ремонт электрики и электроники автомобиля)
+                </span></li>
+                <li class="list__items">Установка оборудования Webasto (автономные отопители, люки, кондиционеры)</li>
+                <li class="list__items">Вклейка и замена стекол автомобиля</li>
+                <li class="list__items">Кузовной ремонт автомобилей, полировка</li>
+                <li class="list__items">Ремонт и обслуживание двигателей</li>
+            </ul>
+        
+        <div class="img-with-text">
+            <img  class="image-on-text image-on-text--hand-with-tool" src="images/content/hand-tool.png" alt="">
             <span class="img-with-text__text">
-                Основные виды 
-услуг нашего 
-техцентра
+                <span class="img-with-text__text-normalize">
+                    Основные виды 
+                    услуг нашего 
+                    техцентра
+                </span>
             </span>
         </div>
     </section>
     <section class="invitation">
+        <div class="invitation__bg-correct-collor"></div>
         <p class="invitation__text">Ремонт и обслуживание вашего
             автомобиля</p>
-            <div class="btn-main">
+            <div class="btn-main btn-main--invitation-mode">
                 Записаться на ремонт
             </div>
     </section>
@@ -130,7 +152,7 @@
             </ul>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="src/script.js"></script>
 </body>
 </html>

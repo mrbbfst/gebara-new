@@ -1,0 +1,21 @@
+.image-on-text {
+    position: absolute;
+
+    &--red-car {
+        bottom: 54px;
+        left: 0;
+        height: 242px;
+    }
+
+    &--gray-car {
+        bottom: calc(25vh/3);
+        right: 57px;
+        width: 30vw;
+        height: 15vw;
+    }
+
+    &--hand-with-tool {
+        z-index: 0;
+        right: 0;
+    }
+}

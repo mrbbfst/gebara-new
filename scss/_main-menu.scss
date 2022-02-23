@@ -1,0 +1,113 @@
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: calc(231px*5*80vw);
+    max-width: calc(231px*5);
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    overflow: hidden;
+    align-items: center;
+
+    &__item {
+        max-width: 231px;
+        width: 20%;
+        //height: 128px;
+        height: 50%;
+        //border: 1px solid #000;
+        padding-top: 85px;
+        text-align: center;
+        border-color: #C4C4C4;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: .5s;
+
+
+        &:nth-child(n+6) {
+            border-left: 1px solid #C4C4C4;
+            border-top: 1px solid #C4C4C4;
+        }
+        & + &:nth-child(-n+5) {
+            border-left: 1px solid #C4C4C4;
+        }
+        &:nth-child(6) {
+            border-left: none;
+        }
+        
+        &--remont {
+            background-image: url(../images/icons/remont.svg);
+            &:hover {
+                background-image: url(../images/icons/remont-w.svg);
+            }
+            //background-size: 83px 26px;
+        }
+        &--wheel {
+            background-image: url(../images/icons/wheel.svg);
+            &:hover {
+                background-image: url(../images/icons/wheel-w.svg);
+            }
+        }
+        &--shape {
+            background-image: url(../images/icons/shape.svg);
+            &:hover {
+                background-image: url(../images/icons/shape-w.svg);
+            }
+        }
+        &--gears {
+            background-image: url(../images/icons/gears.svg);
+            &:hover {
+                background-image: url(../images/icons/gears-w.svg);
+            }
+        }
+        &--glass {
+            background-image: url(../images/icons/glass.svg);
+            &:hover {
+                background-image: url(../images/icons/glass-w.svg);
+            }
+        }
+        &--tuning {
+            background-image: url(../images/icons/tuning.svg);
+            &:hover {
+                background-image: url(../images/icons/tuning-w.svg);
+            }
+        }
+        &--diagnost {
+            background-image: url(../images/icons/diagnost.svg);
+            &:hover {
+                background-image: url(../images/icons/diagnost-w.svg);
+            }
+        }
+        &--oil {
+            background-image: url(../images/icons/oil.svg);
+            &:hover {
+                background-image: url(../images/icons/oil-w.svg);
+            }
+        }
+        &--webasto {
+            background-image: url(../images/icons/webasto.svg);
+            &:hover {
+                background-image: url(../images/icons/webasto-w.svg);
+            }
+        }
+
+        &--alarm {
+            background-image: url(../images/icons/alarm.svg);
+            &:hover {
+                background-image: url(../images/icons/alarm-w.svg);
+            }
+        }
+        
+
+        &:hover {
+            background-color: #EB202E;
+            color: #fff;
+        }
+    }
+
+    &__inner-text {
+        margin-bottom: 5px;
+    }
+}

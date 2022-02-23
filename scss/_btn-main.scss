@@ -1,0 +1,48 @@
+.btn-main {
+    display: inline-block;
+    position: relative;
+    padding: 10px 79px;
+    border: 2px solid #fff;
+    transform: skewX(-20deg);
+    z-index: 2;
+
+    &__text {
+        color:#FFF;
+        transform: skewX(20deg);
+    }
+
+    &--sect-certifiate {
+        margin-top: 40px;
+        margin-left: 20%;
+    }
+
+    &::before {
+        display: block;
+        position: absolute;
+        background: red;
+        transition: 2s;
+        right: 0;
+        width: 0;
+        height: 100%;
+        transition: 2s;
+    }
+    &--mouse-in{
+        &::before {
+            left: 0;
+            width: 100%;
+            right: auto;
+        }
+    }
+    &--mouse-out {
+        &::before {
+            right: 0;
+            width: 0%;
+            left: auto;
+        }
+    }
+
+    &--invitation-mode {
+        display: block;
+        padding: 24px 57px;
+    }
+}

@@ -1,15 +1,66 @@
 .header {
-    height: 468px;
+    min-height: 468px;
+    
     width: 100%;
+    background: url(../images/backgrounds/auto-mechanic-checking-car1.png) center/cover no-repeat;
+    
+    position: relative;
 
-    /*&__logo {
+    &__logo {
+        background-color: #fff;
+        transform: skewX(-25deg);
+        height: 100%;
+        margin-left: calc(-32vw / 15);
+        /*
+        display: block;
         position: relative;
         left: -19px;
-        //transform: skewX(-25deg);
-        width: 248px;
+        
+        //width: 248px;
+        width: calc(195vw / 15);
         height: 84px;
-        background-color: #fff;
-        background: url(../images/logo.png) right 20px center/70% no-repeat, #fff;
-    }*/
+        
+        //background: url(../images/logo.png) right 20px center/70% no-repeat, #fff;
+        text-align: center;
+        vertical-align: middle;
+        */
+
+        &-img {
+            /*
+            width: calc(195vw / 15);
+            height: calc(35vw / 15);
+            margin-top: calc(30vw / 15);
+            margin-left: calc(84vw / 15);
+            margin-top: calc(30vw / 15);
+            margin-left: calc(84vw / 15);
+            transform: skewX(25deg);
+*/
+            width: calc(195vw / 15);
+
+            transform: skew(19deg);
+            height: calc(35vw / 15);
+            margin-top: calc(30vw / 15);
+           margin-left: calc(84vw / 15);
+           margin-right: calc(84vw / 30);
+        }
+    }
+    &__container {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 52px;
+        padding-bottom: 76px;
+        display: flex;
+        justify-content: center;
+        //background-color: rgba(255, 255, 255, 0.767);
+        background-color:  rgba(255, 255, 255, 0.767);
+        position: absolute;
+        //z-index: -1;
+        min-height: 384px;
+        bottom: 0;
+        top: calc(92vw / 15);
+        right: 0;
+        left: 0;
+
+    }
 }
 

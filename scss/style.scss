@@ -1,10 +1,21 @@
 body {
+    font-family: 'Gilroy';
     font-style: 10px;
     font-size: calc(14vw / 15);
+    background: #356;
 }
 
+@import '_font';
+@import '_btn-main';
+@import '_container';
 @import '_tag';
 @import '_header';
 @import '_navigation';
-
-
+@import '_main-menu';
+@import '_info';
+@import '_image-on-text';
+@import '_certificate';
+@import '_short-info';
+@import '_list';
+@import '_img-with-text';
+@import '_invitation';
