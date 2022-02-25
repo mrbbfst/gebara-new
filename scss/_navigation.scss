@@ -37,14 +37,18 @@
         }
         &--popup {
             position: relative;
+            margin-right: 10px;
             &::after {
+                content: '';
                 background: url(../images/icons/popup-down.png);
-                width: 10px;
+                width: 9px;
                 height: 5px;
-                display: block;
+                display: inline-block;
                 background-position: center;
                 background-size: contain;
                 position: absolute;
+                right: -15px;
+                top: calc(50% - 2px);
             }
         }
     }
@@ -76,7 +80,7 @@
             width: calc(182vw / 15);
             //left: calc(44vw / 15);
             //left: calc(44vw / 45);
-            right: calc(10vw / 5);
+            right: calc(15vw / 5);
             line-height: 0;
             top: calc(46vw / 15);
             font-family: "gb";
@@ -94,21 +98,26 @@
             left: auto;
             right: auto;
             z-index: -1;
-            -webkit-transition: all 300ms ease;
-            -o-transition: all 300ms ease;
+            //-webkit-transition: all 300ms ease;
+            //-o-transition: all 300ms ease;
             transition: all 300ms ease;
             animation: line 7s infinite;
             animation-timing-function: ease;
             animation-timing-function: ease-out;
         }
 
+        &--mouse-in::before {
+            animation: influx 1s forwards;
+            background: #fff;
+            left:0; 
+        }
+        &--mouse-out::before {
+            animation: outflux 1s forwards;
+            background: #fff;
+            right: 0;
+        }
+
         &:hover {
-            &::before {
-                animation: influx 1s forwards;
-                
-                background: #fff;
-                left:0;         
-            }
             &> .navigation__button-text {
                 transition: .5s;
                 color: #EB202E;
@@ -138,5 +147,14 @@
     }
     100% {
         width: 100%;
+    }
+}
+
+@keyframes outflux  {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
     }
 }
