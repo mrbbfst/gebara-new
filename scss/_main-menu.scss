@@ -111,32 +111,10 @@
 
     }
 
-    &__material-temp-element {
-        position: absolute;
-        display: block;
-        z-index: 1;
-        min-height: 12px;
-        min-width: 12px;
-        border-radius: 100%;
-        background: rgb(255, 255, 255);
-        animation: buttonWave 2s;
 
-    }
 
     &__inner-text {
         margin-bottom: 5px;
     }
 }
 
-@keyframes buttonWave {
-    0% {
-      opacity: 0.2;
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: scale(50);
-              transform: scale(50);
-    }
-  }

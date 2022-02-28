@@ -5,8 +5,8 @@
     border: 2px solid #fff;
     transform: skewX(-20deg);
     //z-index: 2;
-    transition: color 3s linear;
-    font-weight: bold;
+    transition: color 1s linear;
+    font-weight: 900;
     font-size: 16px;
     line-height: 24px;
     color: #fff;
@@ -51,7 +51,7 @@
             right: auto;*/
             left: 0;
             right: auto;
-            animation: influx 2s forwards;
+            animation: influx .7s forwards;
         }
     }
     &--mouse-out {
@@ -61,7 +61,7 @@
             left: auto;*/
             right: 0;
             left: auto;
-            animation: outflux 2s forwards;
+            animation: outflux .7s forwards;
         }
     }
 

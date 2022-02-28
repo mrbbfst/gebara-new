@@ -1,18 +1,9 @@
+@import url(/fonts/Gilroy/stylesheet.css);
 body {
   font-family: 'Gilroy';
   font-style: normal;
   font-size: calc(14vw / 15);
   background: #356;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url(../fonts/Gilroy-Light.otf);
-}
-
-@font-face {
-  font-family: 'Gilry';
-  src: url(../fonts/Gilroy-ExtraBold.otf);
 }
 
 .btn-main {
@@ -22,9 +13,9 @@ body {
   border: 2px solid #fff;
   -webkit-transform: skewX(-20deg);
           transform: skewX(-20deg);
-  -webkit-transition: color 3s linear;
-  transition: color 3s linear;
-  font-weight: bold;
+  -webkit-transition: color 1s linear;
+  transition: color 1s linear;
+  font-weight: 900;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
@@ -72,8 +63,8 @@ body {
             right: auto;*/
   left: 0;
   right: auto;
-  -webkit-animation: influx 2s forwards;
-          animation: influx 2s forwards;
+  -webkit-animation: influx .7s forwards;
+          animation: influx .7s forwards;
 }
 
 .btn-main--mouse-out::before {
@@ -83,8 +74,8 @@ body {
             left: auto;*/
   right: 0;
   left: auto;
-  -webkit-animation: outflux 2s forwards;
-          animation: outflux 2s forwards;
+  -webkit-animation: outflux .7s forwards;
+          animation: outflux .7s forwards;
 }
 
 .btn-main--invitation-mode {
@@ -513,46 +504,8 @@ a {
   color: #fff;
 }
 
-.main-menu__material-temp-element {
-  position: absolute;
-  display: block;
-  z-index: 1;
-  min-height: 12px;
-  min-width: 12px;
-  border-radius: 100%;
-  background: white;
-  -webkit-animation: buttonWave 2s;
-          animation: buttonWave 2s;
-}
-
 .main-menu__inner-text {
   margin-bottom: 5px;
-}
-
-@-webkit-keyframes buttonWave {
-  0% {
-    opacity: 0.2;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(50);
-    transform: scale(50);
-  }
-}
-
-@keyframes buttonWave {
-  0% {
-    opacity: 0.2;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(50);
-    transform: scale(50);
-  }
 }
 
 .info {
@@ -569,7 +522,7 @@ a {
 
 .info__title--main {
   font-style: normal;
-  font-weight: 800;
+  font-weight: bold;
   font-size: 54px;
   line-height: 66px;
 }
@@ -914,5 +867,43 @@ a {
 .footer__link--accent > a {
   color: #000;
   opacity: .5;
+}
+
+.--material-temp-element {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  min-height: 12px;
+  min-width: 12px;
+  border-radius: 100%;
+  background: white;
+  -webkit-animation: buttonWave 2s;
+          animation: buttonWave 2s;
+}
+
+@-webkit-keyframes buttonWave {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(50);
+    transform: scale(50);
+  }
+}
+
+@keyframes buttonWave {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(50);
+    transform: scale(50);
+  }
 }
 /*# sourceMappingURL=style.css.map */

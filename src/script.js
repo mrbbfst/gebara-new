@@ -22,15 +22,17 @@ function ButtonMouseOut(){
 function materialEffect(e) {
     const wave = document.createElement('span'),
     waveOffset = this.getBoundingClientRect();
-    $(wave).addClass('main-menu__material-temp-element')
-
+    $(wave).addClass('--material-temp-element')
+    if($(this).hasClass('navigation__button')) {
+        $(wave).css('background', 'rgba(200,120,120,50%)');
+    }
     const waveY = e.pageY - waveOffset.top,
     waveX = e.pageX - waveOffset.left;
 
     wave.style.top = waveY + 'px',
     wave.style.left = waveX + 'px',
 
-
+    $(this).css('overflow', 'hidden');
     this.appendChild(wave);
 
     setTimeout(function () {
@@ -55,6 +57,7 @@ function setAction() {
     $(elements.main_menu_elem).on('click', materialEffect);
     $(elements.nav_call_button).on('mouseenter', ButtonNavOn);
     $(elements.nav_call_button).on('mouseleave', ButtonNavOut);
+    $(elements.nav_btn).on('click', materialEffect);
 
 
 }
